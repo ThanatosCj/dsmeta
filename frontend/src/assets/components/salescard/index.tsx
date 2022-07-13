@@ -1,3 +1,5 @@
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import Notificationbutton from '../notificationicon'
 import './styles.css'
 
@@ -7,8 +9,18 @@ function Salescard() {
         <div className="dsmeta-card">
             <h2 className="dsmeta-title">Vendas</h2>
             <div>
-                <div className="dsmeta-formcontrol-container"><input className="dsmeta-formcontrol" type="text"/></div>
-                <div className="dsmeta-formcontrol-container"><input className="dsmeta-formcontrol" type="text"/></div>
+                <div className="dsmeta-formcontrol-container"><DatePicker
+                    selected={new Date()}
+                    onChange={(date: Date) => { }}
+                    className="dsmeta-form-control"
+                    dateFormat="dd/MM/yyyy"
+                /></div>
+                <div className="dsmeta-formcontrol-container"><DatePicker
+                    selected={new Date()}
+                    onChange={(date: Date) => { }}
+                    className="dsmeta-form-control"
+                    dateFormat="dd/MM/yyyy"
+                /></div>
 
 
             </div>
@@ -39,7 +51,7 @@ function Salescard() {
                             <th>R$ 55300.00</th>
                             <th>
                                 <div className="dsmeta-redbtncontainer">
-                                    <Notificationbutton/>
+                                    <Notificationbutton />
 
                                 </div>
 
@@ -55,7 +67,7 @@ function Salescard() {
                             <th className="show900">11</th>
                             <th>R$ 55300.00</th>
                             <th><div className="dsmeta-redbtncontainer">
-                            <Notificationbutton/>
+                                <Notificationbutton />
 
                             </div>
                             </th>
@@ -69,7 +81,7 @@ function Salescard() {
                             <th className="show900">11</th>
                             <th>R$ 55300.00</th>
                             <th><div className="dsmeta-redbtncontainer">
-                            <Notificationbutton/>
+                                <Notificationbutton />
                             </div>
                             </th>
 
